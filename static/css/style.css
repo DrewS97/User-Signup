@@ -1,0 +1,30 @@
+body {
+  background-color: silver;
+}
+
+hr {
+  border-top: black 5px dashed;
+}
+
+.subButton {
+  margin: 10px 0px;
+  padding: 5px;
+  color: white;
+  background-color: blue;
+}
+
+form {
+  border: 2px solid black;
+  padding: 10px;
+  background-color: azure;
+  width: 75%;
+}
+
+input[type=text] {
+  width: 50%;
+  margin: 5px 0px;
+}
+
+h1 {
+  text-align: center;
+}

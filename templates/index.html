@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <header>
+    <h1>Welcome to Our Sign-Up Page!</h1>
+    <hr>
+  </header>
+  <body>
+    <h2><b><i>IMPORTANT INFORMATION!!!</i></b></h2>
+    
+    <p>This page is <i><b><u>---THE---</u></b></i> page for signing up for any of our many services. You can create your account below which will sign you up for the things that we do at this site. <i><b><u>---DON'T DELAY!!!---</u></b></i> This offer to sign up to our site where we do the things we do will only be free for the first 5 months! After that you will have to pay $1000 every time you wish to sign up for our site to see all of the things that we can do for you!</p>
+    
+    <p>Please enter a valid username and password. Email is not required but is encouraged.</p>
+    
+    <h4>Requirements:</h4>
+    
+    <ul>
+      <li>Don't leave any of the following fields empty: username, password, verify password</li>
+      <li>Username, password, and email all must be in between 3-20 characters</li>
+      <li>No spaces in any field</li>
+      <li>If email is provided it must be a valid email</li>
+    </ul>
+    
+    <form action='/' method="POST">
+      <h3>Create Your Account!</h3>
+      Email <br>
+
+      <input type="text" name="email"></input><br>
+      Username <i>- Required</i> <br>
+
+      <input type="text" name="username"></input><br>
+      Password <i>- Required</i> <br>
+
+      <input type="text" name="password"> <br>
+      Verify Password <i>- Required</i> <br>
+
+      <input type="text" name="verify"> <br>
+
+      <input type="submit" class="subButton" name="submit" value="Create Account">
+    </form>
+	  
+    <script src="main.py"></script>
+  </body>
+</html>
