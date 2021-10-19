@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Caesar Cipher</title>
+    <title>User Signup</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   </head>
   <header>
@@ -29,18 +29,18 @@
     
     <form action='/' method="POST">
       <h3>Create Your Account!</h3>
+
       Email <br>
-
-      <input type="text" name="email"></input><br>
+      <input type="text" name="email" value={{email}}>{{eSpaceError}} {{eLenError}} {{invalidEmail}}</input><br>
+      
       Username <i>- Required</i> <br>
-
-      <input type="text" name="username"></input><br>
+      <input type="text" name="username" value={{username}}>{{uBlankError}} {{uSpaceError}} {{uLenError}}</input><br>
+      
       Password <i>- Required</i> <br>
-
-      <input type="text" name="password"> <br>
+      <input type="password" name="password">{{pBlankError}} {{pSpaceError}} {{pLenError}}</input><br>
+      
       Verify Password <i>- Required</i> <br>
-
-      <input type="text" name="verify"> <br>
+      <input type="password" name="verify">{{passwordVerification}} {{vBlankError}} {{vSpaceError}} {{vLenError}}</input> <br>
 
       <input type="submit" class="subButton" name="submit" value="Create Account">
     </form>
